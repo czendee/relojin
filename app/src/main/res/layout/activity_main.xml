@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.youtochi.relojin.MainActivity"
+    tools:deviceIds="wear">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_world"
+        app:layout_box="all" />
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:textColor="@android:color/white"
+        app:layout_box="all" />
+
+<!--
+    <Button
+        android:id="@+id/botonPublicarPeri"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="@string/publicar"
+        android:textStyle="bold"
+        android:layout_gravity="bottom|right"
+        android:onClick="irDetalleRobot"
+        />
+    -->
+
+    <ImageButton
+        android:id="@+id/imgbotonPublicarPeri"
+        android:background="@null"
+        android:layout_gravity="bottom|right"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@mipmap/ic_botonflechaleft"
+        android:onClick="irDetalleRobot"
+        />
+    <ImageButton
+        android:id="@+id/imgBotonCerrar"
+        android:background="@null"
+        android:layout_gravity="bottom|left"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@mipmap/ic_botonflecharight"
+        android:onClick="irCerrar"
+        />
+    <!--
+    <Button
+        android:id="@+id/botonCerrar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:focusable="true"
+        android:textColor="#000000"
+        android:text="@string/cerrarbtn"
+        android:textStyle="bold"
+        android:layout_gravity="bottom|left"
+        android:layout_below="@+id/botonPublicarPeri"
+        android:onClick="irCerrar"
+        android:gravity="bottom|top" />
+-->
+</android.support.wearable.view.BoxInsetLayout>

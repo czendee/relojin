@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Relojin</string>
+    <string name="hello_world">Hola Carlos Zendejas Rules!</string>
+    <string name="publicar">Publicooo</string>
+    <string name="cerrarbtn">Cerrar</string>
+    <string name="guardarbtn">Guarda Web</string>
+    <string name="segunda">Crea Comandos</string>
+
+    <string name="confirmacionMsg">Comando Creado Web</string>
+</resources>
